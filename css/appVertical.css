@@ -1,0 +1,94 @@
+.top {
+   position: absolute;
+   padding: 0;
+   width: 100%;
+   height: 340px;
+}
+
+.pageTitle {
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	font-size: 133;
+	height: 174px;
+}
+
+.hashtag {
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	font-size: 66;
+}
+
+.middle {
+	position: absolute;
+	width: calc(100% - 144px);
+	height: calc(100% - 590px); 
+	top: 340px;
+	margin: 0px 0px 0px 72px;
+}
+
+.mainContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bottom {
+   position: absolute;
+   width: 100%;
+   height: 250px;
+   padding: 0;
+   bottom: 0px;
+}
+
+.bottom img{
+	/*position: absolute;
+	left: 0%;
+	top: 5%;
+	height: 90%;*/
+
+}
+
+.bottom h1 {
+	font-size: 70;
+	color: #000;
+	white-space: nowrap;
+	font-family: 'ProxNovaBold';
+	padding: 0;
+	margin: 100;
+	-ms-transform:rotate(90deg); /* IE 9 */
+  	-moz-transform:rotate(90deg); /* Firefox */
+  	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+  	-o-transform:rotate(90deg); /* Opera */
+}
+
+.bottomBox {
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	background-color:rgba(255,255,255,0.5);
+	height: 181px;
+	bottom: 50px;
+}
+
+.bottomBox.sponsor {
+	left: 72px;
+	width: 300px;
+}
+
+.bottomBox.sponsor img{
+	position: relative;
+	top:20px;
+}
+
+.bottomBox.logo {
+	left: 390px;
+	width: 300px;
+}
+
+.bottomBox.logo img{
+	position: relative;
+	top:20px;
+}

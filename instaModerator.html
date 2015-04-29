@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TweetBoard Moderator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="css/moderatorInstagram.css">
+	<link rel="stylesheet" href="css/jquery.alt-checkbox.icon-font.css">
+	<link rel="stylesheet" href="css/jquery.alt-checkbox.css">
+</head>
+<body>
+	<header>TweetBoard Moderator</header>
+	<div class="buttons">
+		<button type="button" onclick="allClicked()">All Tweets</button>
+		<button type="button" onclick="approvedClicked()">Approved Tweets</button>
+		<button type="button" onclick="uncheckAll()">Uncheck All</button>
+		<button type="button" onclick="checkAll()">Check All</button>
+		<button type="button" onclick="saveClicked()">Save</button>
+	</div>
+	<div class="tweet-wall">
+		<h2>All  Tweets</h2>
+		<ol class="tweets"></ol>
+	</div>
+
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.timeago.js"></script>
+	<script src="js/jquery.alt-checkbox.js"></script>
+
+	<script src="js/appCheckboxesInstagram.js"></script>
+</body>
+</html>

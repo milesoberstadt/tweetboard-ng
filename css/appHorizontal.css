@@ -1,0 +1,124 @@
+.top {
+   position: absolute;
+   padding: 0;
+   width: 100%;
+   height: 23%;
+   display: table;
+}
+
+
+.pageTitle {
+	display: table-cell;
+	padding-left: 72;
+	vertical-align: middle;
+	text-align: left;
+	width: 50%;
+	font-size: 110;
+	height: 100%;
+}
+
+@media(max-width: 900px){
+	.pageTitle {
+		font-size: 80;
+	}
+}
+
+.hashtag {
+	display: table-cell;
+	padding-right: 72;
+	vertical-align: middle;
+	height: 100%;
+	width: 50%;
+	text-align: right;
+	font-size: 66;
+}
+
+.middle {
+	position: absolute;
+	width: calc(100% - 144px);
+	height: 54%;
+	top: 23%;
+	margin: 0px 0px 0px 72px;
+}
+
+.mainContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bottom {
+   position: absolute;
+   width: 100%;
+   height: 23%;
+   padding: 0;
+   bottom: 0px;
+}
+
+.bottom img{
+	/*position: absolute;
+	left: 0%;
+	top: 5%;
+	height: 90%;*/
+
+}
+
+.bottom h1 {
+	font-size: 70;
+	color: #000;
+	white-space: nowrap;
+	font-family: 'ProxNovaBold';
+	padding: 0;
+	margin: 100;
+	-ms-transform:rotate(90deg); /* IE 9 */
+  	-moz-transform:rotate(90deg); /* Firefox */
+  	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+  	-o-transform:rotate(90deg); /* Opera */
+}
+
+.bottomBox {
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	background-color:rgba(255,255,255,0.5);
+	height: 42%;
+	bottom: 29%;
+}
+
+.bottomBox.sponsor {
+	left: 72px;
+	width: 26.71%;
+}
+
+.bottomBox.sponsor img{
+	position: relative;
+	top:20px;
+}
+
+.logoContainer {
+	text-align: center;
+	/*vertical-align: middle;*/
+	position: absolute;
+	height: 100%;
+	left: 31%;
+	width: 27.6%;
+}
+
+.logoContainer img{
+	position: absolute;
+	/*top: 17%;*/
+	bottom: 13.8%;
+	width: 87%;
+	left: 0px;
+}
+
+.bottomBox.logo {
+	/*left: 31%;
+	width: 27.6%;*/
+	width: 100%;
+}
+
+.bottomBox.logo img{
+	position: relative;
+	top:-30px;
+}

@@ -1,0 +1,184 @@
+@font-face {
+	font-family: 'Tex Gyre Adventor';
+	src: url('../fonts/texgyreadventor-regular-webfont.eot');
+	src: url('../fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/texgyreadventor-regular-webfont.woff') format('woff'),
+		 url('../fonts/texgyreadventor-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProxNova';
+	src: url('../fonts/ProximaNovaRegular.eot');
+	src: url('../fonts/ProximaNovaRegular.eot?iefix') format('embedded-opentype');
+	src: url('../fonts/ProximaNovaRegular.woff') format('woff'),
+	 	 url('../fonts/ProximaNovaRegular.ttf') format('truetype'),
+	 	 url('../fonts/ProximaNovaRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProxNovaBold';
+	src: url('../fonts/ProximaNovaBold.eot');
+	src: url('../fonts/ProximaNovaBold.eot?iefix') format('embedded-opentype');
+	src: url('../fonts/ProximaNovaBold.woff') format('woff'),
+	 	 url('../fonts/ProximaNovaBold.ttf') format('truetype'),
+	 	 url('../fonts/ProximaNovaBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	background-color: #ffffff;
+	background-image: url('../img/bg.jpg');
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	/*background-size: auto 100%;*/
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+body {
+	color: #000;
+	font-family: 'ProxNovaBold', 'Avant Garde', sans-serif;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	width: 100%;
+}
+
+.top {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FFFFFF;
+}
+
+.tweet-wall {
+	/*background-color: #fff;*/
+	color: #333;
+	font-family: 'ProxNova';
+	margin: 10px auto;
+	text-align: left;
+	/*width: 520px;*/
+	position: relative;
+	width:100%;
+	height: 100%;
+	padding:0;
+	margin: 0;
+	-webkit-perspective: 600;
+	perspective: 600;
+	-webkit-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+}
+
+.box {
+	position: absolute;
+	padding: 20px, -20px, -20px, 20px;
+	margin: 0;
+	-moz-box-shadow: 5px 5px 10px 5px;
+	-webkit-box-shadow: 5px 5px 10px 5px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden ;
+	transition: 0.6s;
+  -webkit-transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+}
+
+.box.small {
+	background-color: #fff;
+}
+
+.box.big {
+	background-color: #fff;
+}
+
+.box.flipToNormal{
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+}
+
+.box.flipping {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(-180deg);
+}
+
+.avatar {
+	float: left;
+	height: 100%;
+	/*width: 135px;*/
+	padding: 0px 20px 0px 0px;
+}
+
+.accountInfo {
+	height: 100%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.content {
+	padding: 20px 20px 20px 20px;
+}
+
+.account-group {
+	width: 100%;
+	height: 50%; /* Hardcode to avatar height */
+}
+
+.account-group.big {
+	height: 25%;
+}
+
+.smallTextHolder {
+	margin: 0px;
+	height: 50%; /* Hardcode to avatar height + padding*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.smallTextHolder p {
+	margin: 0px;
+}
+
+@media(max-height: 1000px){
+	.account-group {
+		font-size: 18px;
+	}
+	.smallTextHolder {
+		font-size: 16px;
+	}
+}
+
+.media {
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	margin-left: auto;
+}
+
+.media.portait {
+	width: 100%;
+}
+
+.media.landscape {
+	height: 100%;
+}
+
+.stream-item-header {
+	margin-left: auto;
+	height: calc(100% - 40px);
+	overflow: hidden;
+}
+
+div.mediaContainer {
+  text-align: right;
+  height: calc(75% - 20px);  /* 50% - padding*/
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  overflow: hidden;
+}
