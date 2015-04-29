@@ -2,7 +2,7 @@
    position: absolute;
    padding: 0;
    width: 100%;
-   height: 23%;
+   height: 10%;
    display: table;
 }
 
@@ -36,8 +36,8 @@
 .middle {
 	position: absolute;
 	width: calc(100% - 144px);
-	height: 54%;
-	top: 23%;
+	height: 80%;
+	top: 10%;
 	margin: 0px 0px 0px 72px;
 }
 
@@ -50,7 +50,7 @@
 .bottom {
    position: absolute;
    width: 100%;
-   height: 23%;
+   height: 10%;
    padding: 0;
    bottom: 0px;
 }
@@ -81,12 +81,12 @@
 	vertical-align: middle;
 	position: absolute;
 	background-color:rgba(255,255,255,0.5);
-	height: 42%;
-	bottom: 29%;
+	height: 100%;
+	bottom: 0px;
 }
 
 .bottomBox.sponsor {
-	left: 72px;
+	left: 100px;
 	width: 26.71%;
 }
 
@@ -100,16 +100,12 @@
 	/*vertical-align: middle;*/
 	position: absolute;
 	height: 100%;
-	left: 31%;
+	right: 105px; /*Add a tiny bit more offset, looks weird because of the drop shadow*/
 	width: 27.6%;
 }
 
 .logoContainer img{
-	position: absolute;
-	/*top: 17%;*/
-	bottom: 13.8%;
-	width: 87%;
-	left: 0px;
+	height:100%;
 }
 
 .bottomBox.logo {
@@ -119,6 +115,5 @@
 }
 
 .bottomBox.logo img{
-	position: relative;
-	top:-30px;
+	height:100%;
 }
