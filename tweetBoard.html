@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" ng-app="tweetboardApp">
 <head>
 	<meta charset="utf-8">
 	<title>#MakerFaire</title>
@@ -9,8 +9,20 @@
 	<link rel='stylesheet' media='screen and (min-width: 700px) and (max-width: 1080px)' href='css/appVertical.css' />!-->
 	<link rel='stylesheet' media='screen and (orientation:landscape)' href='css/appHorizontal.css' />
 	<link rel='stylesheet' media='screen and (orientation:portrait)' href='css/appVertical.css' />
+	<script src="js/angular/angular.js"></script>
+	<script src="js/controllers.js"></script>
 </head>
-<body>
+<body ng-controller="TweetBoardCtrl">
+	<div class="box-small" ng-repeat="box in boxes">
+		<img style="width=50px" ng-src="{{box.avatar}}">
+		<div class="accountInfo">
+			<strong class="fullname">{{box.full_name}}</strong>
+			<br><span class="username"><s>@</s><b>{{box.username}}</b></span>
+		</div>
+		<div class="smallTextHolder">
+			<p class="tweet-text">{{box.tweet.text}}</p>
+		</div>
+	</div>
 	<div class="top">
 		<div class="pageTitle">Maker Faire 2014</div>
 		<div class="hashTag">#MakerFaire</div>
@@ -38,7 +50,7 @@
 	<script src="js/jquery.timeago.js"></script>
 	<script src="js/jquery.fittext.js"></script>
 	<script src="js/appHTMLGen.js"></script>
-	<script src="js/app.js"></script>
+	<!--<script src="js/app.js"></script>!-->
 	<script>
 	function getTweetBoardLogo()
 	{
