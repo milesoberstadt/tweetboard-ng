@@ -4,12 +4,15 @@
 	<title>#MakerFaire</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="css/app.css">
-	<!--<link rel='stylesheet' media='screen and (min-width: 1081px)' href='css/appHorizontal.css' />
-	<link rel='stylesheet' media='screen and (min-width: 700px) and (max-width: 1080px)' href='css/appVertical.css' />!-->
+	<style>
+		html{
+			background-image: url('img/bg.jpg');
+		}
+	</style>
+	<!--<link rel="stylesheet" href="css/app.css">
 	<link rel='stylesheet' media='screen and (orientation:landscape)' href='css/appHorizontal.css' />
-	<link rel='stylesheet' media='screen and (orientation:portrait)' href='css/appVertical.css' />
-	<script src="js/angular/angular.js"></script>
+	<link rel='stylesheet' media='screen and (orientation:portrait)' href='css/appVertical.css' /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script src="js/controllers.js"></script>
 </head>
 <body ng-controller="TweetBoardCtrl">
@@ -17,7 +20,7 @@
 		<img style="width=50px" ng-src="{{box.avatar}}">
 		<div class="accountInfo">
 			<strong class="fullname">{{box.full_name}}</strong>
-			<br><span class="username"><s>@</s><b>{{box.username}}</b></span>
+			<br><span class="username">@<b>{{box.username}}</b></span>
 		</div>
 		<div class="smallTextHolder">
 			<p class="tweet-text">{{box.tweet.text}}</p>
