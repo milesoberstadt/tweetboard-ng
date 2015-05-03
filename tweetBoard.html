@@ -4,54 +4,52 @@
 	<title>#MakerFaire</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<style>
-		html{
-			background-image: url('img/bg.jpg');
-		}
-	</style>
 	<!--<link rel="stylesheet" href="css/app.css">
 	<link rel='stylesheet' media='screen and (orientation:landscape)' href='css/appHorizontal.css' />
 	<link rel='stylesheet' media='screen and (orientation:portrait)' href='css/appVertical.css' /> -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/layout-simple.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/controllers.js"></script>
 </head>
 <body ng-controller="TweetBoardCtrl">
-	<div class="box-small" ng-repeat="box in boxes">
-		<img style="width=50px" ng-src="{{box.avatar}}">
-		<div class="accountInfo">
-			<strong class="fullname">{{box.full_name}}</strong>
-			<br><span class="username">@<b>{{box.username}}</b></span>
+	<div class="container">
+		<div class="box-small" ng-repeat="box in boxes">
+			<img style="width=50px" ng-src="{{box.avatar}}">
+			<div class="accountInfo">
+				<strong class="fullname">{{box.full_name}}</strong>
+				<br><span class="username">@<b>{{box.username}}</b></span>
+			</div>
+			<div class="smallTextHolder">
+				<p class="tweet-text">{{box.tweet.text}}</p>
+			</div>
 		</div>
-		<div class="smallTextHolder">
-			<p class="tweet-text">{{box.tweet.text}}</p>
-		</div>
-	</div>
-	<div class="top">
-		<div class="pageTitle">Maker Faire 2014</div>
-		<div class="hashTag">#MakerFaire</div>
+		<div class="top">
+			<div class="pageTitle">Maker Faire 2014</div>
+			<div class="hashTag">#MakerFaire</div>
 
-	</div>
-	<div class="middle">
-		<div class="mainContainer">
-			<div class="tweet-wall">
+		</div>
+		<div class="middle">
+			<div class="mainContainer">
+				<div class="tweet-wall">
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="bottomBox sponsor"><img src="img/sponsorLogo.png"></div>
+			<div class="logoContainer">
+				<div class="bottomBox logo"> </div>
+				<img src="img/tweetBoard.png" onload="this.onload=null; this.src=getTweetBoardLogo();">
+			</div>
+
+			<div class="bottomBox">
+				
 			</div>
 		</div>
 	</div>
-
-	<div class="bottom">
-		<div class="bottomBox sponsor"><img src="img/sponsorLogo.png"></div>
-		<div class="logoContainer">
-			<div class="bottomBox logo"> </div>
-			<img src="img/tweetBoard.png" onload="this.onload=null; this.src=getTweetBoardLogo();">
-		</div>
-
-		<div class="bottomBox">
-			
-		</div>
-	</div>
-	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="js/jquery.timeago.js"></script>
 	<script src="js/jquery.fittext.js"></script>
 	<script src="js/appHTMLGen.js"></script>
