@@ -16,16 +16,9 @@
 </head>
 <body ng-controller="TweetBoardCtrl">
 	<div class="container">
-		<div class="box-small" ng-repeat="box in boxes">
-			<img style="width=50px" ng-src="{{box.avatar}}">
-			<div class="accountInfo">
-				<strong class="fullname">{{box.full_name}}</strong>
-				<br><span class="username">@<b>{{box.username}}</b></span>
-			</div>
-			<div class="smallTextHolder">
-				<p class="tweet-text">{{box.tweet.text}}</p>
-			</div>
-		</div>
+		
+		<div box-holder sourceArray="boxes"></div>
+
 		<div class="top">
 			<div class="pageTitle">Maker Faire 2014</div>
 			<div class="hashTag">#MakerFaire</div>
